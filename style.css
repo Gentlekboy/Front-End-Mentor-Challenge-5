@@ -37,13 +37,42 @@ img.hamburger-menu{
   width: 35px;
   height: 18px;
 }
+img.close-icon{
+  display: none;
+  position: absolute;
+  right: 17px;
+  transition: 0.9s;
+}
+div.top-nav-links{
+  width: 85%;
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 27px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  padding-top: 23px;
+  transition: 0.9s;
+}
+li.top-nav{
+  font-size: 17px;
+  margin-bottom: 23px;
+}
+a.top-nav{
+  text-decoration: none;
+  color: rgb(21, 21, 36);
+}
+div.header-btn-1{
+  display: none;
+}
 
 /* BACKGROUND IMAGES */
 div.bg{
   background-image: url(images/image-mockups.png), url(images/bg-intro-mobile.svg);
   background-size: contain;
   background-repeat: no-repeat, no-repeat;
-  background-position: center -69px, center -10px;
+  background-position: center 10px, center 60px;
   width: auto;
   height: 330px;
   background-color: hsl(0, 0%, 98%);
@@ -238,6 +267,10 @@ a.footer-a-text{
 }
 
 /* HOVER STATES */
+
+a.top-nav:hover{
+  color: gray;
+}
 button.header-btn:hover{
   transform: scale(1.05);
   box-shadow: 5px 5px 8px rgb(131, 128, 128), -3px -3px 5px rgb(185, 183, 183);
@@ -260,7 +293,7 @@ a.footer-a-text:hover, a.footer-nav:hover{
 @media screen and (min-width: 358px){
   div.bg{
     height: 380px;
-    background-position: center -79px, center -19px;
+    background-position: center -3px, center 60px;
   }
   img.article-image{
     height: 180px;
@@ -268,9 +301,18 @@ a.footer-a-text:hover, a.footer-nav:hover{
 }
 
 @media screen and (min-width: 373px){
+  div.top-nav-links{
+    width: 90%;
+    right: 22px;
+    padding-top: 25px;
+  }
+  li.top-nav{
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
   div.bg{
     height: 400px;
-    background-position: center -83px, center -19px;
+    background-position: center -9px, center 60px;
   }
   header{
     padding: 10px 30px;
@@ -284,12 +326,22 @@ a.footer-a-text:hover, a.footer-nav:hover{
 }
 
 @media screen and (min-width: 412px){
+  div.top-nav-links{
+    width: 90%;
+    right: 22px;
+    padding-top: 30px;
+  }
+  li.top-nav{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
   div.bg{
     height: 440px;
-    background-position: center -95px, center -19px;
+    background-position: center -22px, center 50px;
   }
   header{
     padding: 0 40px;
+    margin-top: -25px;
   }
   img.article-image{
     height: 180px;
@@ -305,6 +357,15 @@ a.footer-a-text:hover, a.footer-nav:hover{
   }
   nav.nav-bar{
     width: 73%;
+  }
+  div.top-nav-links{
+    width: 90%;
+    right: 25px;
+    padding-top: 25px;
+  }
+  li.top-nav{
+    font-size: 20px;
+    margin-bottom: 25px;
   }
   div.bg{
     height: 450px;
@@ -379,7 +440,7 @@ a.footer-a-text:hover, a.footer-nav:hover{
   }
 }
 
-@media screen and (min-width: 734px){
+/* @media screen and (min-width: 734px){
   .container{
     width: 63%;
   }
@@ -417,4 +478,4 @@ a.footer-a-text:hover, a.footer-nav:hover{
   aside{
     padding: 50px 40px;
   }
-}
+} */
